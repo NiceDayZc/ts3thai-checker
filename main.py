@@ -11,7 +11,7 @@ def do_server(html):
         url = url.replace('ts3server://', '')
         return url
     else:
-        print("ts3server not found")
+        return "ts3server not found"
 
 def run(username, password):
     cookiePHP = post("https://www.ts3thai.net/members/", headers={
